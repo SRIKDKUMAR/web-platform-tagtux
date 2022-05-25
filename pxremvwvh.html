@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+      .px {
+        font-size: 20px;
+        width: 450px;
+        background-color: #aaa;
+      }
+
+      .percentage {
+        width: 50%;
+        background-color: #ddd;
+      }
+
+      .rem {
+        font-size: 1.2rem;
+        background-color: #ddd;
+      }
+
+      .em {
+        font-size: 1.5em;
+        background-color: yellow;
+      }
+
+      .vh {
+        height: 20vh;
+        background-color: red;
+      }
+
+      .vw {
+        width: 50vw;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>px/%/rem,vm,vh,%</h2>
+    <p>Absolute :px/%</p>
+    <p>Relative :rem,vm,vh,%</p>
+    <div class="container">
+      <h3>ABSOLUTE</h3>
+      <div class="px">PIXILE</div>
+      <div class="percentage">PIRCENTAGE(%)</div>
+      <h3>RELATIVE</h3>
+      <div class="rem">
+        rem - relative to the font size of root(1rem=16px) - ANY ONE CHANGE THE
+        BROWSER SETTING IT WILL ALSO CHANGE BASE ON THE PASSING, MARGING AND
+        RESPONSIVE. GOOD TO USE, The rem value is based on the root element
+        (html), Its same as px but only diff is responsiveness
+      </div>
+      <!-- if html{ fontsize:10px}  .rem{ fotn-size:2rem (20px)} -->
+      <div class="em">
+        em- relative to font size of element ( LESS USED ), font size of the
+        element (e.g. 2.5em means the font is 2.5 times bigger than the normal
+        font), value based on the parent element
+      </div>
+      <div class="vw">vw- relative to the 1% of the width of viewport</div>
+      <div class="vh">vh- relative to the 1% of the height of viewport</div>
+      <div class="percent">
+        %- relative to the parent element - default is font 16px
+        (font-size100%), but the vm works on the full view
+      </div>
+    </div>
+  </body>
+</html>
